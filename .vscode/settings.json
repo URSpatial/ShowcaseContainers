@@ -1,7 +1,7 @@
 {"deploy": {"targets":[{
     "type": "local",
-    "name": "URSpatial Campus Visitors",
+    "name": "Willis Center Kiosk App",
     "description": "A SMB shared network folder",
-    "dir": "\\\\urspatial\\wwwroot\\apps\\Showcase\\Willis"
+    "dir": "\\\\urspatial\\wwwroot\\apps\\Showcase"
 }]}
 }
