@@ -1,0 +1,43 @@
+<html ng-app="wstsApp">
+
+<head>
+    <title>Willis Center Touch Screen</title>
+    <link rel="stylesheet" type="text/css" href="site.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main_container" ng-controller="SitesController">
+        <!-- <div style="display: none;">
+            <iframe src="http://urspatial.redlands.edu/apps/campustrees" width="0" height="0"></iframe>
+            <iframe src="http://univredlands.maps.arcgis.com/apps/MapJournal/index.html?appid=3934c41bc1614c02b099b945bfeee2ad" width="0" height="0"></iframe>
+            <iframe src="http://www.bing.com" width="0" height="0"></iframe>
+            <iframe src="http://www.reuters.com/" width="0" height="0"></iframe>
+        </div> -->
+        <div class="main_content" id="content">
+            <div class="iframeContainer" ng-repeat="site in sites" style="display:none" data-id="{{site.id}}">
+                <iframe ng-src="{{site.url}}" width="5" height="5">
+                    Something went wrong
+                </iframe>
+            </div>
+            <!-- <iframe ng-src="{{sites[currentSelected].url}}" width="5" height="5">
+                    Something went wrong
+                </iframe> -->
+        </div>
+        <div class="lower_nav">
+            <ul class="button-group">
+                <li><img src="logo-reverse.png" class="brand"></li>
+                <li ng-repeat="site in sites">
+                    <a class="button-link" ng-click="siteSelected(site.id)" ng-class="{'selected': currentSelected == site.id}">
+                            {{site.name}}
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

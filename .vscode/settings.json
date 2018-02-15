@@ -1,0 +1,7 @@
+{"deploy": {"targets":[{
+    "type": "local",
+    "name": "URSpatial Campus Visitors",
+    "description": "A SMB shared network folder",
+    "dir": "\\\\urspatial\\wwwroot\\apps\\Showcase\\Willis"
+}]}
+}
