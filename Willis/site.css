@@ -79,6 +79,7 @@ a.button-link {
     margin: 0px 10px;
     text-decoration: none;
     text-align: center;
+    background-color: darkslategray;
 }
 
 a.selected {

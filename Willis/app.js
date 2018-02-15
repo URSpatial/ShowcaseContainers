@@ -21,14 +21,14 @@ var mySites = [{
         url: '//urspatial.redlands.edu/apps/campustrees',
         id: 3
     }, {
-        name: 'Tetiaroa Atoll',
+        name: 'Mayterm - Tetiaroa',
         description: 'A travel journal with maps',
         url: '//univredlands.maps.arcgis.com/apps/MapJournal/index.html?appid=3934c41bc1614c02b099b945bfeee2ad',
         id: 4
     }, {
-        name: 'Redlands Slideshow',
-        description: 'Slideshow',
-        url: '//myredlandsapps.redlands.edu/DigitalSignsManagement/Display/WillisCenter01',
+        name: 'Mayterm - Panamapping',
+        description: 'Panamapping',
+        url: '//univredlands.maps.arcgis.com/apps/Cascade/index.html?appid=ea1b2b8ca8ed486f9fdda34b8b6c5999',
         id: 5
     }
 ];
