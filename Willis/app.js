@@ -1,34 +1,34 @@
 var mySites = [{
         name: 'Welcome Visitors!',
         description: "Map of today's visitors",
-        url: 'http://urspatial.redlands.edu/apps/CampusVisitors',
+        url: '//urspatial.redlands.edu/apps/CampusVisitors',
         id: 0
     },
     {
         name: 'Campus Map',
         description: 'UofR Campus Map',
-        url: 'http://campusmap.redlands.edu/',
+        url: '//campusmap.redlands.edu/',
         id: 1
     },
     {
         name: 'Alumni Map',
         description: 'Alumni Cluster Map',
-        url: 'http://urspatial.redlands.edu/apps/alumni/clusters',
+        url: '//urspatial.redlands.edu/apps/alumni/clusters',
         id: 2
     }, {
         name: 'Campus Trees',
         description: 'Trees around campus',
-        url: 'http://urspatial.redlands.edu/apps/campustrees',
+        url: '//urspatial.redlands.edu/apps/campustrees',
         id: 3
     }, {
         name: 'Tetiaroa Atoll',
         description: 'A travel journal with maps',
-        url: 'http://univredlands.maps.arcgis.com/apps/MapJournal/index.html?appid=3934c41bc1614c02b099b945bfeee2ad',
+        url: '//univredlands.maps.arcgis.com/apps/MapJournal/index.html?appid=3934c41bc1614c02b099b945bfeee2ad',
         id: 4
     }, {
         name: 'Redlands Slideshow',
         description: 'Slideshow',
-        url: 'https://myredlandsapps.redlands.edu/DigitalSignsManagement/Display/WillisCenter01',
+        url: '//myredlandsapps.redlands.edu/DigitalSignsManagement/Display/WillisCenter01',
         id: 5
     }
 ];
