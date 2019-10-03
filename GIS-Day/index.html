@@ -1,7 +1,7 @@
 <html ng-app="wstsApp">
 
 <head>
-    <title>Willis Center Touch Screen</title>
+    <title>GIS Day Apps</title>
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="site.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,7 +30,10 @@
         </div>
         <div class="lower_nav">
             <ul class="button-group">
-                <li><img src="logo-reverse.png" class="brand"></li>
+                <!-- <li id="logo">
+                    <!-- <div id="logo"></div> -->
+                </li> -->
+                <li><img src="logo.png" class="brand"></li>
                 <li ng-repeat="site in sites">
                     <a class="button-link" ng-click="siteSelected(site.id)" ng-class="{'selected': currentSelected == site.id}">
                             {{site.name}}

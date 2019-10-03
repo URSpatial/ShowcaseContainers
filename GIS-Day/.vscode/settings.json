@@ -1,0 +1,7 @@
+{"deploy": {"targets":[{
+    "type": "local",
+    "name": "GIS Day Showcase apps",
+    "description": "A SMB shared network folder",
+    "dir": "\\\\urspatial\\wwwroot\\apps\\showcase\\GIS-Day"
+}]}
+}

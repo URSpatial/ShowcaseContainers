@@ -1,46 +1,56 @@
 var autoReload = true;
 var timeoutMinutes = 60;
 var idleTimer;
-var mySites = [{
-        name: 'Welcome Visitors!',
-        description: "Map of today's visitors",
-        url: '//urspatial.redlands.edu/apps/CampusVisitors',
+var mySites = [
+
+    {
+        name: 'Bulldogs Today',
+        description: "Map of current bulldogs around the world",
+        url: '//urspatial.redlands.edu/apps/Students',
         id: 0
-    },
-    {
-        name: 'Campus Map',
-        description: 'UofR Campus Map',
-        url: '//campusmap.redlands.edu/',
-        id: 1
-    },
-    {
-        name: 'Current Students',
-        description: 'Current UofR Students',
-        url: '//urspatial.redlands.edu/apps/students',
-        id: 2
     },
     {
         name: 'Alumni Map',
         description: 'Alumni Cluster Map',
         url: '//urspatial.redlands.edu/apps/alumni/clusters',
-        id: 3
-    }, {
+        id: 1
+    },
+    // {
+    //     name: 'Campus Map',
+    //     description: 'UofR Campus Map',
+    //     url: '//campusmap.redlands.edu/',
+    //     id: 1
+    // },
+    {
         name: 'Bulldogs Abroad!',
         description: 'Travel abroad opportunities',
         url: '//urspatial.redlands.edu/apps/bulldogsabroad',
-        id: 4
+        id: 2
     },
     {
         name: 'First-Year Journeys',
         description: 'First-Year Journey opportunities',
         url: '//urspatial.redlands.edu/apps/fyj',
-        id: 5
+        id: 4
     }, {
         name: 'Campus Trees',
         description: 'Trees around campus',
         url: '//urspatial.redlands.edu/apps/campustrees',
-        id: 6
+        id: 3
+    },
+    // {
+    //     name: 'EarthWindMap',
+    //     description: "Globe",
+    //     url: '//earth.nullschool.net/#current/wind/surface/level/orthographic=-102.14,33.27,422',
+    //     id: 5
+    // },
+    {
+        name: 'Ruff-Ruff Reviews',
+        description: "Redlands reviews for students by students",
+        url: '//urspatial.redlands.edu/apps/ruffreviews',
+        id: 5
     }
+
     // , {
     //     name: 'Mayterm - Panama',
     //     description: 'Panamapping',
@@ -76,6 +86,7 @@ $(document).ready(function() {
     // });
 })
 $(function() {
+    layoutPage();
     $(".iframeContainer[data-id=0]").show();
 
     //this is not working because we're not getting all the events in the iframe. Look this up later.
@@ -85,10 +96,17 @@ $(function() {
         clearTimeout(idleTimer);
         //setIdleTimer();
     });
+    $(document).resize(function() {
+        layoutPage();
+    });
     // $('iframe').load(function() {
     //     $(this).contents().find("body").on('click', function(event) { alert('test'); });
     // });
 });
+
+function layoutPage() {
+    $(".brand").height($(".lower_nav").height() - 10)
+}
 
 function setIdleTimer() {
     idleTimer = setTimeout(function() {
