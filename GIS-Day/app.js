@@ -44,17 +44,17 @@ var mySites = [
     //     url: '//earth.nullschool.net/#current/wind/surface/level/orthographic=-102.14,33.27,422',
     //     id: 5
     // },
-    {
-        name: 'Geo-Bucket List',
-        description: 'Bucket list app',
-        url: 'https://univredlands.maps.arcgis.com/apps/opsdashboard/index.html#/33d9a834da2c4c40907eaf93293df144',
-        id: 5
-    },
+    // {
+    //     name: 'Geo-Bucket List',
+    //     description: 'Bucket list app',
+    //     url: 'https://univredlands.maps.arcgis.com/apps/opsdashboard/index.html#/33d9a834da2c4c40907eaf93293df144',
+    //     id: 5
+    // },
     {
         name: 'Ruff-Ruff Reviews',
         description: "Redlands reviews for students by students",
         url: '//urspatial.redlands.edu/apps/ruffreviews',
-        id: 6
+        id: 5
     }
 
     // , {
