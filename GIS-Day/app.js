@@ -45,10 +45,16 @@ var mySites = [
     //     id: 5
     // },
     {
+        name: 'Geo-Bucket List',
+        description: 'Bucket list app',
+        url: 'https://univredlands.maps.arcgis.com/apps/opsdashboard/index.html#/33d9a834da2c4c40907eaf93293df144',
+        id: 5
+    },
+    {
         name: 'Ruff-Ruff Reviews',
         description: "Redlands reviews for students by students",
         url: '//urspatial.redlands.edu/apps/ruffreviews',
-        id: 5
+        id: 6
     }
 
     // , {
